@@ -1,3 +1,122 @@
-.top-sec {
-    background: url("../images/wp1809477-captain-america-civil-war-wallpapers.jpg")
+@font-face {
+    font-family: 'championshipregular';
+    src: url('../championshipnewton-font/championship-webfont.woff2') format('woff2'),
+         url('../championshipnewton-font/championship-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
+
+@font-face {
+    font-family: 'newton_howard_fontregular';
+    src: url('../championshipnewton-font/newton_howard_font-webfont.woff2') format('woff2'),
+         url('../championshipnewton-font/newton_howard_font-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.top-sec {
+    background: url("../images/cap-iron-back-ground.png") no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+.captain-nav, .im-nav {
+    text-decoration: none ;
+    color: white;
+}
+
+.im-txt {
+    font-family: 'newton_howard_fontregular', sans-serif;
+    color: white;
+}
+
+.captain-txt {
+    font-family: "championshipregular", sans-serif;
+    color: white;
+}
+
+.im-txt:hover {
+
+    background-image: linear-gradient(90deg ,red, yellow);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.captain-txt:hover {
+
+    background-image: linear-gradient(90deg ,red, rgb(0, 149, 255), white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.captain-txt-holder, .im-txt-holder {
+    height: 500px;
+    position: relative;
+}
+
+.cap-heading, .im-heading {
+    font-size: 3em;
+}
+
+.cap-heading, .im-heading {
+    position: absolute;
+}
+
+.cap-heading, .im-heading {
+    bottom: 5%;
+}
+
+.cap-heading {
+    left: 5%;
+}
+.im-heading {
+    right: 5%;
+}
+
+/* Info cards */
+
+#cap-info {
+    /* height: 25%; */
+    background: linear-gradient(90deg, #E6716C, #79B5DB);
+    box-shadow: rgba(240, 46, 46, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    
+}
+
+
+.char-img {
+    width: 100%;
+}
+
+.cap-info-heading {
+    font-family: 'championshipregular';
+}
+
+.cap-info-txt {
+    font-family: 'championshipregular';
+    text-transform: uppercase;
+    
+}
+
+
+
+
+
+
+
+
+
