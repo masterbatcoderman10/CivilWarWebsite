@@ -16,8 +16,30 @@
 
 }
 
+@font-face {
+    font-family: 'cyberfunkregular';
+    src: url('../championshipnewton-font/cyberfunk-webfont.woff2') format('woff2'),
+         url('../championshipnewton-font/cyberfunk-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cyberverse_condenseditalic';
+    src: url('../championshipnewton-font/cyberverse_condensed_italic-webfont.woff2') format('woff2'),
+         url('../championshipnewton-font/cyberverse_condensed_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    background-color: rgb(8, 8, 8) !important;
+}
+
 .top-sec {
-    background: url("../images/cap-iron-back-ground.png") no-repeat;
+    background: url("../images/Cap-Ironman-background.jpg") no-repeat;
     background-position: top;
     background-size: cover;
     height: 100vh;
@@ -91,14 +113,15 @@
 /* Info cards */
 
 #cap-info {
-    /* height: 25%; */
+
     background: linear-gradient(90deg, #E6716C, #79B5DB);
-    box-shadow: rgba(240, 46, 46, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-    
+    /* box-shadow: rgba(240, 46, 46, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px; */
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(85, 91, 255) 0px 0px 0px 6px, rgb(255, 255, 255) 0px 0px 0px 9px, rgb(255, 255, 255) 0px 0px 0px 12px, rgb(255, 19, 19) 0px 0px 0px 15px, rgb(255, 19, 19) 0px 0px 0px 18px;
 }
 
 
 .char-img {
+    
     width: 100%;
 }
 
@@ -109,8 +132,75 @@
 .cap-info-txt {
     font-family: 'championshipregular';
     text-transform: uppercase;
+    font-size: 1.2em;
     
 }
+
+
+/* Medium Screens */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    #cap-info, #im-info {
+        height: 300px;
+    }
+
+    .cap-info-txt {
+        font-size: 0.8em;
+    }
+}
+
+/* Large Screens */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    #cap-info, #im-info {
+        height: 400px;
+    }
+
+    .cap-info-txt {
+        font-size: 0.8em;
+    }
+}
+
+/* Very Large Devices */
+@media (min-width: 1200px) {
+
+    #cap-info, #im-info {
+        height: 475.95px;
+    }
+
+    .cap-info-txt {
+        font-size: 0.8em;
+    }
+}
+
+/* Iron Man Section */
+#im-info {
+    background: linear-gradient(90deg, #ffc400ec, red);
+    box-shadow: rgba(41, 216, 255, 0.4) -5px 5px, rgba(41, 216, 255, 0.3) -10px 10px, rgba(41, 216, 255, 0.2) -15px 15px, rgba(41, 216, 255, 0.1) -20px 20px, rgba(41, 216, 255, 0.05) -25px 25px;
+}
+
+.im-info-heading {
+    color: #011FFF;
+    font-family: 'newton_howard_fontregular', sans-serif;
+}
+
+.im-info-txt {
+    
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,31,255,1) 0%, rgba(1,0,46,1) 59%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: 'cyberverse_condenseditalic', sans-serif;
+    font-size: 1.2em;
+}
+
+.im-st-txt {
+    color: black;
+    font-weight: bolder;
+    font-family: 'newton_howard_fontregular', sans-serif;
+}
+
 
 
 
